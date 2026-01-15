@@ -1,0 +1,58 @@
+.header__icon--cart {
+  text-decoration-line: none;
+  min-width: 76.48px;
+  gap: 8px;
+}
+.cart-text + .svg-wrapper{
+  flex: 0 0 25px;
+}
+.header__icon--search{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration-line: none;
+  gap: 8px;
+}
+.search-text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0;
+  font-size: 1.3rem;
+}
+.cart-text{
+  letter-spacing: 0;
+  font-size: 1.3rem;
+}
+.header__icons{
+  gap: 8px;
+}
+.cart-count-bubble{
+  bottom: unset;
+  left: unset;
+  top: 0;
+  right: 0;
+}
+.header__menu-item{
+  letter-spacing: 0;
+  font-size: 1.3rem;
+}
+.header__inline-menu .list-menu li:last-child a {
+  background: url('https://cdn.shopify.com/s/files/1/0550/8589/1747/files/flag-ca-h16.png?v=1651967319') no-repeat 0 45%;
+  padding-left: 30px;
+}
+.menu-drawer__navigation .menu-drawer__menu li:last-child a {
+  background: url('https://cdn.shopify.com/s/files/1/0550/8589/1747/files/flag-ca-h16.png?v=1651967319') no-repeat 8% 45%;
+  padding-left: 65px;
+}
+@media screen and (max-width: 749px) {
+  .header__icon--cart {
+    min-width: unset;
+  }
+  .cart-text,
+  .search-text {
+    display: none;
+  }
+}
