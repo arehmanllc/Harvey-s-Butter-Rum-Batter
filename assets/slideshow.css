@@ -1,19 +1,47 @@
-slideshow-component.position-up{
-  top: -102px;
+slideshow-component.position-up {
+  margin-top: -125px;
 }
-.banner__heading > *{
+
+.banner__heading>* {
   font-family: var(--font-heading-fontspring);
   font-size: clamp(40px, 4vw, 92px);
   line-height: clamp(45px, 4.5vw, 90px);
   margin-block: 0;
 }
-slideshow-component .banner__buttons .button{
+
+slideshow-component .banner__buttons .button {
   font-family: var(--font-heading-fontspring);
   font-size: 20px;
   font-weight: 400;
 }
-slideshow-component .banner__text{
+
+slideshow-component .banner__text {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0;
+}
+
+slideshow-component .slideshow__text-wrapper.banner__content {
+  justify-content: space-between;
+}
+
+slideshow-component .slideshow__popup img {
+  width: 40vw;
+}
+
+@media screen and (max-width:989px) {
+  slideshow-component .slideshow__text-wrapper.banner__content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .slideshow__text.banner__box {
+    text-align: center;
+    align-items: center;
+  }
+
+  slideshow-component .slideshow__popup img {
+    width: 100%;
+  }
 }

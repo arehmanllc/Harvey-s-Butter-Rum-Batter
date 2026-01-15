@@ -47,6 +47,15 @@
   background: url('https://cdn.shopify.com/s/files/1/0550/8589/1747/files/flag-ca-h16.png?v=1651967319') no-repeat 8% 45%;
   padding-left: 65px;
 }
+details[open]>.search-modal{
+  background-color: #E8AF3E;
+}
+details[open]>.search-modal .field__input{
+  background-color: #FFDD9A;
+}
+details[open]>.search-modal .predictive-search{
+  background-color: #FFDD9A;
+}
 @media screen and (max-width: 749px) {
   .header__icon--cart {
     min-width: unset;
