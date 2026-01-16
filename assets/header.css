@@ -47,6 +47,9 @@
   background: url('https://cdn.shopify.com/s/files/1/0550/8589/1747/files/flag-ca-h16.png?v=1651967319') no-repeat 8% 45%;
   padding-left: 65px;
 }
+.shopify-section-header-sticky.animate:not(.shopify-section-header-hidden){
+  background-color: #FFDD9A;
+}
 details[open]>.search-modal{
   background-color: #E8AF3E;
 }
