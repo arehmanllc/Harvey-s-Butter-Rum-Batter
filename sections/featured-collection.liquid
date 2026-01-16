@@ -3,6 +3,7 @@
 
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'ft-collection.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
@@ -29,11 +30,34 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  {% if section.settings.top_up_image != blank %}
+    #collection-{{ section.id }}::before{
+      content: "";
+      display: block;
+      width: 250px;
+      height: 250px;
+      background-image: url({{ section.settings.top_up_image | img_url: '250x' }});
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      right:0;
+      top:-100px;
+    }
+  {% endif %}  
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  @media screen and (max-width: 989px) {
+    #collection-{{ section.id }}::before{
+      width: 100px;
+      height: 100px;
+      top:-75px;
     }
   }
 {%- endstyle -%}
@@ -63,7 +87,6 @@
     assign show_desktop_slider = true
   endif
 -%}
-
 <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
 >
@@ -227,6 +250,10 @@
       "type": "collection",
       "id": "collection",
       "label": "t:sections.featured-collection.settings.collection.label"
+    },{
+      "type": "image_picker",
+      "id": "top_up_image",
+      "label": "Top up Image"
     },
     {
       "type": "range",

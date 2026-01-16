@@ -1,0 +1,46 @@
+.collection .collection__title .title {
+  font-family: var(--font-heading-fontspring);
+  text-transform: uppercase;
+}
+.collection .collection__title {
+  text-align: center;
+}
+.collection .collection__description {
+  font-weight: 500;
+}
+.collection .card .card__inner .card__media {
+  border: 1px solid #2b2b2b;
+}
+.collection .card__heading {
+  font-family: var(--font-heading-fontspring);
+  font-size: 20px;
+}
+.collection .quick-add__submit {
+  font-family: var(--font-heading-fontspring);
+  font-weight: 300;
+  font-size: 20px;
+}
+.collection .slider-counter {
+  display: none;
+}
+.collection .slider-button {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 2px 5px 0px #47454580;
+  border-radius: 50%;
+}
+.collection .slider-buttons{
+  justify-content: space-between;
+  position: absolute;
+  width: 97%;
+  top: 35%;
+  left: 2%;
+}
+.collection .slider-button .icon
+{
+  height: 100%;
+}
+@media screen and (max-width: 989px){
+  .collection .slider-buttons{
+    top: 25%;
+  }
+}
