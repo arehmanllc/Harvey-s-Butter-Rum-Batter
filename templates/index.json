@@ -150,7 +150,7 @@
         "heading_size": "hxl",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "columns_desktop": 1,
         "column_alignment": "left",

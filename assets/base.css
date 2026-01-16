@@ -1800,7 +1800,7 @@ details[open] > .share-button__fallback {
   line-height: 1.5;
   font-family: var(--font-heading-family);
 }
-
+@keyframes floatUpDown { 0%, 100% { transform: translateY(0); } 50% {transform: translateY(-2rem); } }
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,
 .field__input:-webkit-autofill ~ .field__label,
