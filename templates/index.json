@@ -134,10 +134,18 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/HarveysSnackBagsAssorted_1000X999_8155511a-5499-4e13-b95e-d5d70781d816_1_1.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "model_hd_1": "<strong>FAMILY RECIPE SINCE 1952</strong>",
+            "model_text_1": "<p>A time-honored recipe passed down through generations.</p>",
+            "model_hd_2": "<strong>SMALL-BATCH CRAFTED</strong>",
+            "model_text_2": "<p>Carefully popped in small batches to ensure quality and consistency.</p>",
+            "model_hd_3": "<strong>REAL BUTTER ALWAYS</strong>",
+            "model_text_3": "<p>Made with real butter for rich, comforting flavor in every bite.</p>",
+            "model_hd_4": "<strong>PERFECT FOR SHARING</strong>",
+            "model_text_4": "<p>Great for gifting, gatherings, and everyday snacking moments.</p>",
+            "model_hd_5": "<strong>NO SHORTCUT INGREDIENTS</strong>",
+            "model_text_5": "<p>Made with simple, honest ingredients, can feel good about.</p>",
+            "model_hd_6": "<strong>BOLD, CLASSIC FLAVORS</strong>",
+            "model_text_6": "<p>From sweet to savory, every flavor is crafted to satisfy.</p>"
           }
         }
       },
@@ -146,7 +154,10 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
+        "left-pop-image": "shopify://shop_images/Pngtree_close_up_single_popcorn_for_20378479_8.png",
+        "right-pop-image": "shopify://shop_images/Pngtree_close_up_single_popcorn_for_20378479_8.png",
         "title": "The Secret Saucead",
+        "sub-title": "What makes Harvey’s popcorn truly unforgettable.",
         "heading_size": "hxl",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -155,11 +166,11 @@
         "columns_desktop": 1,
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 100
       }
     }
   },
