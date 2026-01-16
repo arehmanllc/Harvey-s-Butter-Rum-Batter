@@ -54,7 +54,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "harveys-specialty-popcorn",
-        "top_up_image": "shopify://shop_images/Pngtree_close_up_single_popcorn_for_20378479_1.png",
+        "top_up_image": "shopify://shop_images/Pngtree_close_up_single_popcorn_for_20378479_8.png",
         "products_to_show": 8,
         "title": "Top Selling",
         "heading_size": "hxl",
@@ -85,14 +85,14 @@
         "heading_qMm8PC": {
           "type": "heading",
           "settings": {
-            "heading": "CK WITH HARVEY'S",
+            "heading": "C<img class=\"heading-text-img\" src=\"https://cdn.shopify.com/s/files/1/0550/8589/1747/files/Group_9.png?v=1768567787\">K WITH<br/>HARVEY’S",
             "heading_size": "hxl"
           }
         },
         "text_7L7Pjz": {
           "type": "text",
           "settings": {
-            "text": "<p>Easy, comforting recipes made with real ingredients,<br/>crafted to bring warmth and flavor to every kitchen.</p>",
+            "text": "<p>Easy, comforting recipes made with real ingredients, crafted to bring warmth and flavor to every kitchen.</p>",
             "text_style": "body"
           }
         },
