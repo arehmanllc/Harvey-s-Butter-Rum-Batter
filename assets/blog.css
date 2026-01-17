@@ -1,0 +1,29 @@
+.blog .title-wrapper-with-link{
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.blog .blog__title{
+  font-family: var(--font-heading-fontspring);
+  text-transform: uppercase;
+}
+.blog__dec{
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+.blog .card__heading > *{
+  font-size: 24px;
+}
+.blog .article-card__image-wrapper img{
+  object-fit: contain;
+  background-color: #ffffff;
+}
+.blog .article-card__image-wrapper{
+  box-shadow: 2px 2px 10px 0px #00000026;
+
+}
+.blog-articles .article-card .card__information, .blog__posts .article-card .card__information{
+  padding-left: 0;
+  padding-right: 0;
+}
