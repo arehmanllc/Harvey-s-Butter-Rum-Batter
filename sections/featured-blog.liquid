@@ -2,6 +2,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
+{{ 'blog.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -24,6 +25,7 @@
     assign posts_displayed = section.settings.post_limit
   endif
 -%}
+
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
   <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
@@ -37,14 +39,23 @@
         >
           {{ section.settings.heading }}
         </h2>
-
+          {% if section.settings.blogs-dec != blank %}
+          <div
+            class="blog__dec b-500 inline-richtext {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+            {% endif %}
+          >
+            {{ section.settings.blogs-dec }}
+          </div>
+          {% endif %}  
         {%- if section.settings.blog != blank
           and section.settings.show_view_all
           and section.settings.post_limit < section.settings.blog.articles_count
         -%}
           <a
             href="{{ section.settings.blog.url }}"
-            class="link underlined-link large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="link blog__button button large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           >
             {{ 'sections.featured_blog.view_all' | t }}
           </a>
@@ -75,7 +86,7 @@
                 show_image: section.settings.show_image,
                 show_date: section.settings.show_date,
                 show_author: section.settings.show_author,
-                show_excerpt: true
+                show_excerpt: false
               %}
             </li>
           {%- endfor -%}
@@ -221,6 +232,12 @@
       "id": "heading",
       "default": "t:sections.featured-blog.settings.heading.default",
       "label": "t:sections.featured-blog.settings.heading.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "blogs-dec",
+      "default": "t:sections.featured-blog.settings.heading.default",
+      "label": "Blogs Description"
     },
     {
       "type": "select",
