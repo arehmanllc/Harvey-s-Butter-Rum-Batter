@@ -1,0 +1,25 @@
+.banner__content{
+  justify-content: space-between !important;
+  gap: 20px;
+}
+.banner__popup-media-image{
+  max-width: 500px;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 989px){
+  .banner__content{
+    flex-direction: column;
+  }
+  .banner__box{
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+  .banner__box{
+    max-width: unset;
+  }
+  .banner-popup-image{
+    padding: 1.5rem;
+  }
+}
