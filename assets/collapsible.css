@@ -1,0 +1,21 @@
+.collapsible-content .collapsible-content__heading{
+  font-family: var(--font-heading-fontspring);
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.caption-with-letter-spacing{
+  font-size: 18px;
+}
+@media screen and (max-width: 989px) {
+  .collapsible-content::before {
+    width: 100px !important;
+    height: 100px !important;
+    top: 0px !important;
+  }
+  .collapsible-content::after {
+    width: 100px !important;
+    height: 100px !important;
+    top: 95% !important;
+  }
+}

@@ -1,0 +1,29 @@
+{{ 'ftr-bgd-img.css' | asset_url | stylesheet_tag }}
+<div class="bg-container">
+  <div class="footer-bg-image-container page-width">
+    {% if section.settings.ft_image != blank %}
+      <img src="{{ section.settings.ft_image |  img_url: 'master' }}" alt="{{ section.settings.ft_image.alt | escape }}">
+    {% endif %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Background Image footer",
+    "tag": "section",
+    "class": "bgd-ftr-img-sec",
+    "settings": [
+      {
+  "type": "image_picker",
+  "id": "ft_image",
+  "label": "Footer Image"
+}
+    ],
+    "presets": [
+      {
+        "name": "Background Image footer",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}

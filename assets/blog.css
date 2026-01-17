@@ -7,6 +7,9 @@
   font-family: var(--font-heading-fontspring);
   text-transform: uppercase;
 }
+.blog{
+  position: relative;
+}
 .blog__dec{
   max-width: 500px;
   margin: 0 auto;
@@ -26,4 +29,29 @@
 .blog-articles .article-card .card__information, .blog__posts .article-card .card__information{
   padding-left: 0;
   padding-right: 0;
+}
+.article-card__info{
+  display: flex;
+  justify-content: space-between;
+}
+.article-card__info > *{
+  letter-spacing: 0;
+}
+.read-more{
+  text-transform: capitalize;
+  font-style: italic;
+  text-decoration-line: underline;
+  
+}
+@media screen and (max-width: 989px) {
+  .blog::before {
+    width: 100px !important;
+    height: 100px !important;
+    top: 0px !important;
+  }
+  .blog::after {
+    width: 100px !important;
+    height: 100px !important;
+    top: 95% !important;
+  }
 }
