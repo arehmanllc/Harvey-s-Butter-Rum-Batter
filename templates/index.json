@@ -172,12 +172,63 @@
         "padding_top": 36,
         "padding_bottom": 100
       }
+    },
+    "image_banner_XYdnaU": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bCj4bV": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>THE ORIGINAL<br/>BUTTER RUM</strong></p>",
+            "heading_size": "hxl"
+          }
+        },
+        "text_8KHizy": {
+          "type": "text",
+          "settings": {
+            "text": "Harvey’s legendary butter rum batter made with real butter,warm spices, and a family recipe perfected over generations.",
+            "text_style": "body"
+          }
+        },
+        "buttons_EF3UnU": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "#",
+            "button_style_secondary_1": false,
+            "button_label_2": "Explore Recipes",
+            "button_link_2": "#",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_bCj4bV",
+        "text_8KHizy",
+        "buttons_EF3UnU"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Group_1545.png",
+        "pop-img": "shopify://shop_images/HarveysBatter6Pack3_1000_512x512_2.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-2",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
     }
   },
   "order": [
     "slideshow_JAdRUE",
     "featured_collection",
     "image_with_text_CA7H8U",
-    "multicolumn_gKyJqE"
+    "multicolumn_gKyJqE",
+    "image_banner_XYdnaU"
   ]
 }
