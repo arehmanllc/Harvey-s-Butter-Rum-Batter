@@ -13,12 +13,47 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_F6wj6j": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SHOP",
+            "menu": "learn-more"
+          }
+        },
+        "link_list_wArbDG": {
+          "type": "link_list",
+          "settings": {
+            "heading": "ABOUT US",
+            "menu": "products"
+          }
+        },
+        "text_ayDCtn": {
+          "type": "text",
+          "settings": {
+            "heading": "CONTACT US",
+            "subtext": "<p>Harvey’s Butter Rum Batter, <br/>LLC. P.O. Box 4457 Bremerton,<br/>Washington 98312<br/>USA</p><p><br/><a href=\"tel:+1 (360) 373 6460\" target=\"_blank\" title=\"tel:+1 (360) 373 6460\">+1 (360) 373 6460</a></p>"
+          }
+        },
+        "brand_information_z6RrhE": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "link_list_F6wj6j",
+        "link_list_wArbDG",
+        "text_ayDCtn",
+        "brand_information_z6RrhE"
+      ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "color_scheme": "scheme-293d23dc-42f0-4109-bb26-612438d863a0",
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
+        "enable_follow_on_shop": false,
+        "show_social": false,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
@@ -27,9 +62,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "footer_bg_image_7dpXAp": {
+      "type": "footer-bg-image",
+      "name": "Background Image footer",
+      "settings": {
+        "ft_image": "shopify://shop_images/harveys_logo_1_4.png"
+      }
     }
   },
   "order": [
-    "footer"
+    "footer",
+    "footer_bg_image_7dpXAp"
   ]
 }
