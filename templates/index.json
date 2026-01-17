@@ -228,6 +228,8 @@
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
         "blog": "news",
+        "pop_image_left": "shopify://shop_images/Pngtree_close_up_single_popcorn_for_20378479_8.png",
+        "pop_image_right": "shopify://shop_images/Pngtree_close_up_single_popcorn_for_20378479_8.png",
         "post_limit": 3,
         "heading": "<strong>From the Popcorn Journal</strong>",
         "blogs-dec": "Stories, recipes, and behind-the-scenes momentsfrom the people who craft every batch of Harvey’s.",
@@ -241,6 +243,141 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_content_ULmHbE": {
+      "type": "image-with-content",
+      "name": "Image with content",
+      "settings": {
+        "image": "shopify://shop_images/banner-about_1.png",
+        "heading": "<p><strong>A TRUE<br/>ORIGINAL</strong></p>",
+        "heading_size": 92,
+        "heading_color": "#2b2b2b",
+        "heading_width": 40,
+        "description": "<p>Share your brand story, values, or product details here. This flexible layout allows you to create engaging content that connects with your audience.</p>",
+        "text_size": 18,
+        "text_color": "#2b2b2b",
+        "button_text": "Our Story",
+        "button_link": "#",
+        "button_background": "#e8af3e",
+        "button_text_color": "#2b2b2b",
+        "button_font_size": 16,
+        "button_padding_vertical": 14,
+        "button_padding_horizontal": 32,
+        "button_border_radius": 40,
+        "background_color": "#e8af3e",
+        "padding_top": 0,
+        "padding_bottom": 120,
+        "content_padding_top": 40,
+        "content_padding_bottom": 40,
+        "content_padding_horizontal": 40,
+        "content_gap": 40,
+        "right_column_gap": 24,
+        "mobile_gap": 24
+      }
+    },
+    "collapsible_content_g3Erat": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_q7iiT8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Besides making hot buttered rums, can I use the butter rum batter for other things?",
+            "icon": "none",
+            "row_content": "<p>Absolutely. We have several recipes on our website that feature the butter rum batter-from drinks to desserts. Please take a look at them and also join us on our blog and FB page for additional ideas and to share your ideas.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QHKnnX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Harvey’s Butter Rum Batter have alcohol in it?",
+            "icon": "none",
+            "row_content": "<p>Our batter does not contain actual alcohol in it. We use a delicious flavoring that gives it the rum taste.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QmLpAB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Harvey’s have a retail store?",
+            "icon": "none",
+            "row_content": "<p>Harvey’s just sells to our wholesale accounts out of our plant. We value our stores and retail accounts for carrying our products, just as they value you as customers. If there is not a retail store in your area, we do offer an <a href=\"https://www.harveysbrb.com/shop/\" title=\"Products\">online store </a>for your convenience and can even assist you with your gift giving needs.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_89X3cT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Harvey’s offer tours of our plant?",
+            "icon": "none",
+            "row_content": "<p>Due to food safety regulations, we are not able to offer tours or our production facility. We do wholesale production and are not set up to accommodate the public.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WCmc8t": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is your product gluten free?",
+            "icon": "none",
+            "row_content": "<p>Our butter rum batter and toffee corn are gluten free. Currently there are no items in our production facility that contain gluten, so no chance of any cross-contamination.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dFYyPR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the shelf life of the Butter Rum Batter?",
+            "icon": "none",
+            "row_content": "<p>Our batter has a 2 year shelf life under refrigeration and even longer if frozen. The toffee corn is best when eaten within 4 months of production.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_aP4npm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where can I find my favorite Harvey’s items?",
+            "icon": "none",
+            "row_content": "<p>The Harvey’s line of products can be found for sale in many grocery and specialty stores. If you would like your store to carry our products, please let them know.<br/><br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XQVL97": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where does the rabbit come from on your logo?",
+            "icon": "none",
+            "row_content": "<p>Our beloved rabbit or should we say “polka”, named Harvey, comes from the Pulitzer Prize Play “Harvey”, which was made into a movie starring James Stewart in the 1950’s. Because “Harvey” is never seen in the movie our Founder, Harvey Hudson was able to bring the character to life and officially get a Trademark registration on him.<br/><br/></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_q7iiT8",
+        "collapsible_row_QHKnnX",
+        "collapsible_row_QmLpAB",
+        "collapsible_row_89X3cT",
+        "collapsible_row_WCmc8t",
+        "collapsible_row_dFYyPR",
+        "collapsible_row_aP4npm",
+        "collapsible_row_XQVL97"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "pop_image_left": "shopify://shop_images/Pngtree_close_up_single_popcorn_for_20378479_8.png",
+        "pop_image_right": "shopify://shop_images/Pngtree_close_up_single_popcorn_for_20378479_8.png",
+        "caption": "We’ve Got Answers",
+        "heading": "Got Questions?",
+        "heading_size": "hxl",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-5",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -249,6 +386,8 @@
     "image_with_text_CA7H8U",
     "multicolumn_gKyJqE",
     "image_banner_XYdnaU",
-    "featured_blog_PHRXqq"
+    "featured_blog_PHRXqq",
+    "image_with_content_ULmHbE",
+    "collapsible_content_g3Erat"
   ]
 }
