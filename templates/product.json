@@ -52,10 +52,6 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -63,26 +59,25 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "collapsible_tab_zpeiaM": {
-          "type": "collapsible_tab",
+        "tabs_hMJLRE": {
+          "type": "tabs",
           "settings": {
-            "heading": "Ingredients",
-            "icon": "none",
-            "content": "<p>Ingredients</p>",
-            "page": ""
-          }
-        },
-        "collapsible_tab_YRQ7X8": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "shipping",
-            "icon": "none",
-            "content": "<p>shipping</p>",
-            "page": ""
+            "number_of_tabs": 3,
+            "label_0": "Description",
+            "content_0": "",
+            "richtext_0": "",
+            "page_0": "",
+            "html_0": "",
+            "label_1": "Ingredients",
+            "content_1": "Ingredients",
+            "richtext_1": "",
+            "page_1": "",
+            "html_1": "",
+            "label_2": "shipping",
+            "content_2": "shipping",
+            "richtext_2": "",
+            "page_2": "",
+            "html_2": ""
           }
         },
         "share": {
@@ -98,11 +93,8 @@
         "price",
         "icon_with_text_jyXbye",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
-        "description",
-        "collapsible_tab_zpeiaM",
-        "collapsible_tab_YRQ7X8",
+        "tabs_hMJLRE",
         "share"
       ],
       "settings": {
@@ -125,6 +117,7 @@
       "type": "related-products",
       "settings": {
         "heading": "You may also like",
+        "sub_heading": "The popcorn our customers love most.",
         "heading_size": "hxl",
         "products_to_show": 4,
         "columns_desktop": 4,

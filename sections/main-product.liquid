@@ -191,6 +191,8 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+                {%- when 'tabs' -%}
+                {%- render 'product-tabs', block: block -%}
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
@@ -746,6 +748,109 @@
   "blocks": [
     {
       "type": "@app"
+    },{
+      "type": "tabs",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "number",
+          "id": "number_of_tabs",
+          "label": "Number of tabs",
+          "default": 3
+        },
+        {
+          "type": "text",
+          "id": "label_0",
+          "label": "Tab 1 label"
+        },
+        {
+          "type": "text", 
+          "id": "content_0",
+          "label": "Tab 1 content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_0",
+          "label": "Image 1"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_0",
+          "label": "Tab 1 richtext"
+        },
+        {
+          "type": "page",
+          "id": "page_0",
+          "label": "Tab 1 page"
+        },
+        {
+          "type": "html",
+          "id": "html_0",
+          "label": "Tab 1 HTML"
+        },
+
+        {
+          "type": "text",
+          "id": "label_1",
+          "label": "Tab 2 label"
+        },
+        {
+          "type": "text",
+          "id": "content_1",
+          "label": "Tab 2 content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 2"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_1",
+          "label": "Tab 2 richtext"
+        },
+        {
+          "type": "page",
+          "id": "page_1",
+          "label": "Tab 2 page"
+        },
+        {
+          "type": "html",
+          "id": "html_1",
+          "label": "Tab 2 HTML"
+        },
+
+        {
+          "type": "text",
+          "id": "label_2",
+          "label": "Tab 3 label"
+        },
+        {
+          "type": "text",
+          "id": "content_2",
+          "label": "Tab 3 content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 3"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_2",
+          "label": "Tab 3 richtext"
+        },
+        {
+          "type": "page",
+          "id": "page_2",
+          "label": "Tab 3 page"
+        },
+        {
+          "type": "html",
+          "id": "html_2",
+          "label": "Tab 3 HTML"
+        }
+      ]
     },
     {
       "type": "text",
