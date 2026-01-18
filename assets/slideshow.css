@@ -10,7 +10,6 @@ slideshow-component.position-up {
 }
 
 slideshow-component .banner__buttons .button {
-  font-family: var(--font-heading-fontspring);
   font-size: 20px;
   font-weight: 400;
 }
