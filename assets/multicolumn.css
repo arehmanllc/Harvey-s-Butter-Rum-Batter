@@ -14,7 +14,7 @@
 }
 
 .multicolumn .multicolumn-card__info .model-item {
-  padding: 15px;
+  padding: 10px;
   background-color: #ffffff;
   border: 3px solid #e8af3e;
   border-radius: 3px;
@@ -52,9 +52,17 @@
   transition-delay: 0.6s;
 }
 .multicolumn .multicolumn-list__item:only-child {
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 65%;
 }
-
+.model-heading{
+  font-size: 16px;
+  line-height: normal;
+}
+.model-text{
+  font-size: 14px;
+  line-height: normal;
+}
 @media screen and (min-width: 990px) {
   .multicolumn .multicolumn-card__info .model-item:nth-child(1) {
     top: 0;
@@ -65,8 +73,8 @@
     left: 0;
   }
   .multicolumn .multicolumn-card__info .model-item:nth-child(3) {
-    top: 90%;
-    left: 0;
+    top: 80%;
+    left: 5%;
   }
   .multicolumn .multicolumn-card__info .model-item:nth-child(4) {
     top: 0;
@@ -88,7 +96,7 @@
   }
   .multicolumn .multicolumn-card__info .model-item {
     position: absolute;
-    max-width: 300px;
+    max-width: 250px;
   }
 }
 @media screen and (max-width: 989px) {

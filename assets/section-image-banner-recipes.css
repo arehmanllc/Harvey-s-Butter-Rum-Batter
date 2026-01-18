@@ -1,0 +1,5 @@
+.banner__heading > *{
+  font-family: var(--font-heading-fontspring);
+  font-size: clamp(32px, 4vw, 67px);
+  margin-bottom: 0;
+}
