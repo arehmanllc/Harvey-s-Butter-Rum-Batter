@@ -1,0 +1,21 @@
+.image-with-text__media-item{
+  width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2) !important;
+}
+.image-with-text__text-item{
+  width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2) !important;
+}
+.image-with-text__heading{
+  font-size: clamp(24px, 4vw, 48px);
+  text-transform: uppercase;
+}
+.image-with-text__text{
+  font-weight: 500;
+}
+@media screen and (max-width: 989px){
+  .image-with-text__media-item{
+    width: 100% !important;
+  }
+  .image-with-text__text-item{
+    width: 100% !important;
+  }
+}
