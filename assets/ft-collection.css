@@ -8,18 +8,18 @@
 .collection .collection__description {
   font-weight: 500;
 }
-.collection .card .card__inner .card__media {
+ .card .card__inner .card__media {
   border: 1px solid #2b2b2b;
 }
-.collection .card__heading {
+ .card__heading {
   font-family: var(--font-heading-fontspring);
   font-size: 20px;
 }
-.collection .quick-add__submit {
+ .quick-add__submit {
   font-family: var(--font-normal-fontspring);
   font-weight: 300;
 }
-.collection .slider-counter {
+ .slider-counter {
   display: none;
 }
 .collection .slider-button {

@@ -15,7 +15,12 @@
 .belo-multicolumn .multicolumn-card{
   text-align: center;
 }
-
+.belo-multicolumn .title{
+      font-size: clamp(36px, 5vw, 60px);
+    text-align: center;
+    font-family: var(--font-heading-fontspring);
+    width: 100%;
+}
 .belo-multicolumn .multicolumn-list__item .media--adapt .multicolumn-card__image{
   width: 100px;
   left: 50%;
