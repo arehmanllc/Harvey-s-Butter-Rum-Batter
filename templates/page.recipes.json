@@ -11,13 +11,324 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_banner_Mqm6p6": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_YBbMjT": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>It Was Never Just About Flavor</p>",
+            "heading_size": "hxl"
+          }
+        },
+        "text_pURNeN": {
+          "type": "text",
+          "settings": {
+            "text": "It started behind a bar in 1952, and grew into a tradition built on <strong>REAL BUTTER. REAL FLAVOR</strong>.Handcrafted, honest, and made to be shared.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YBbMjT",
+        "text_pURNeN"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Mildred-Hudson_production_line_1.png",
+        "image_overlay_opacity": 20,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-52f13d6d-c484-4250-9a8b-d86869ef2f47",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "marquee_VB8JfT": {
+      "type": "marquee",
+      "blocks": {
+        "marquee_item_PYfHFD": {
+          "type": "marquee_item",
+          "settings": {
+            "text": "TRADITION",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_JRRk9i": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify://shop_images/Ellipse_4.svg",
+            "text": "",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_HXyfhC": {
+          "type": "marquee_item",
+          "settings": {
+            "text": "QUALITY",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_T4UBE9": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify://shop_images/Ellipse_4.svg",
+            "text": "",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_8Xe9rT": {
+          "type": "marquee_item",
+          "settings": {
+            "text": "CRAFT",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_qzhhWc": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify://shop_images/Ellipse_4.svg",
+            "text": "",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_M7XbGP": {
+          "type": "marquee_item",
+          "settings": {
+            "text": "FLAVOR",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_8Lftab": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify://shop_images/Ellipse_4.svg",
+            "text": "",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_DnGkQe": {
+          "type": "marquee_item",
+          "settings": {
+            "text": "HERITAGE",
+            "enable_icon": false
+          }
+        },
+        "marquee_item_PtJC3q": {
+          "type": "marquee_item",
+          "settings": {
+            "icon": "shopify://shop_images/Ellipse_4.svg",
+            "text": "",
+            "enable_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "marquee_item_PYfHFD",
+        "marquee_item_JRRk9i",
+        "marquee_item_HXyfhC",
+        "marquee_item_T4UBE9",
+        "marquee_item_8Xe9rT",
+        "marquee_item_qzhhWc",
+        "marquee_item_M7XbGP",
+        "marquee_item_8Lftab",
+        "marquee_item_DnGkQe",
+        "marquee_item_PtJC3q"
+      ],
+      "name": "Marquee Section",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "autoplay": true,
+        "font_heading_family": "f-head",
+        "heading_size": "h1",
+        "font_weight": "b-700",
+        "padding_top": 13,
+        "padding_top_mobile": 13,
+        "padding_bottom": 13,
+        "padding_bottom_mobile": 13
+      }
+    },
+    "image_with_text_GiKAr8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xMmetX": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Tradition Since 1952",
+            "heading_size": "h1"
+          }
+        },
+        "text_HCrVhC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Since 1952, Harvey’s Butter Rum Batter has been crafting a specialty mix beloved for its rich flavor and unmistakable quality. Made batch-by-batch using real butter and premium ingredients, our batter has become a staple for creating delicious drinks and recipes enjoyed for generations.<br/>Harvey’s Butter Rum Batter is found in grocery, convenience, and liquor stores throughout the Pacific Northwest and Mountain Region, and is proudly used by restaurants and bars. For those outside our region, our online store ships across the United States.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xMmetX",
+        "text_HCrVhC"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/banner-about_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_zjdrNa": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wTUM76": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE CRAFT AND THE PEOPLE",
+            "heading_size": "h1"
+          }
+        },
+        "text_LRCcVY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In the fall of 2014, Harvey’s expanded its tradition of quality by acquiring the Little River Candy Company in Wenatchee, Washington. This marked the introduction of our toffee popcorn a crisp, confection-style treat made using real candy-making techniques. No shortcuts. Just craftsmanship you can taste.<br/>Our popcorn line grew further in 2016 with the purchase of Casey’s Kettle Corn in Sequim, Washington, allowing us to offer even more handcrafted popcorn varieties to our fans.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wTUM76",
+        "text_LRCcVY"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/banner-about_5.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_3Uz4HF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WjxpxR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made the Right Way",
+            "heading_size": "h1"
+          }
+        },
+        "text_3DLKhm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our toffee popcorn is truly a confection, carefully crafted using traditional candy-making methods that prioritize quality over shortcuts. Each batch is made with the same attention to detail and commitment to real ingredients that has defined Harvey’s Butter Rum Batter for generations. From the first pop to the final coating, every step is handled with care to ensure a crisp texture, rich flavor, and satisfying finish. Once you try it, you’ll quickly understand why our fans return time and again—and why this popcorn has earned its place alongside our original batter as a true Harvey’s classic.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WjxpxR",
+        "text_3DLKhm"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/banner-about_5_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_kwA4TR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iBVUKi": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR HERITAGE",
+            "heading_size": "hxl"
+          }
+        },
+        "text_kj4hXR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Harvey Hudson first created his butter rum batter in 1952 while tending bar at a local lounge in Bremerton, Washington. Its popularity grew so quickly that customers began requesting tubs to take home. By the 1960s, demand had grown so much that Harvey partnered with a local dairy to produce the batter in larger batches after hours, distributing it through home delivery routes.<br/><br/>In 1972, Harvey opened his own production plant in Bremerton, expanding distribution and solidifying the brand’s place in the region. Harvey remained passionate about his business and his customers until his passing in 2011 at the age of 94.<br/><br/>Having been born and raised in the same community and deeply connected to its history, I was honored to purchase Harvey’s Butter Rum Batter in December of 2011. Quality, passion, and tradition remain at the heart of our mission as we proudly carry forward the legacy Harvey Hudson began so many years ago.<br/>Our fans are the reason we do what we do, and we sincerely thank you for making this journey so rewarding.</p>"
+          }
+        },
+        "heading_Q6HedJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stacy Ryan",
+            "heading_size": "h2"
+          }
+        },
+        "text_nCVPXa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>President, Harvey’s Butter Rum Batter, LLC</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iBVUKi",
+        "text_kj4hXR",
+        "heading_Q6HedJ",
+        "text_nCVPXa"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_banner_Mqm6p6",
+    "marquee_VB8JfT",
+    "image_with_text_GiKAr8",
+    "image_with_text_zjdrNa",
+    "image_with_text_3Uz4HF",
+    "rich_text_kwA4TR"
   ]
 }
