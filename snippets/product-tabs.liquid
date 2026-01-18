@@ -1,0 +1,39 @@
+{{ 'tab-content.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'tab-content.js' |  asset_url }}" defer="defer"></script>
+<product-tabs>
+  <div class="prod-tabs">
+    <div class="prod-tabs__grid">
+      <div class="prod-tabs__head grid">
+        {% for i in (i..block.settings.number_of_tabs) %}
+          {% capture label %}label_{{ forloop.index0 }}{% endcapture %}
+          {% if block.settings[label] != blank %}
+            <button class="button-tab{% if forloop.first %} active{% endif %}" data-id="{{ block.settings[label] | handleize }}-{{ forloop.index0 }}" tab-button>
+              {{ block.settings[label] }}
+            </button>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="prod-tabs__body primary-scroll-bar">
+        {% for i in (i..block.settings.number_of_tabs) %}
+        {% capture label %}label_{{ forloop.index0 }}{% endcapture %}{% capture content %}content_{{ forloop.index0 }}{% endcapture %}{% capture richtext %}richtext_{{ forloop.index0 }}{% endcapture %}{% capture page %}page_{{ forloop.index0 }}{% endcapture %}{% capture html %}html_{{ forloop.index0 }}{% endcapture %}{% capture image %}image_{{ forloop.index0 }}{% endcapture %}
+          {%- assign tab_handle = block.settings[label] | handleize -%}
+           {% if tab_handle contains 'description' or block.settings[content] != blank or block.settings[richtext] != blank or block.settings[page] != blank or block.settings[html] != blank %}  
+            <div class="prod-tabs__content {% if forloop.first %} active{% endif %}"  data-id="{{ block.settings[label] | handleize }}-{{ forloop.index0 }}" {% if forloop.first %} style="--max-height: auto;" {% endif %}  tab-content>
+              <div class="prod-tabs__content--inner">
+                {% if tab_handle contains 'description' and block.settings[content] == blank and block.settings[richtext] == blank %}
+                  {{ product.description }}
+                {% else %}
+                  {%- if block.settings[content] -%}<p>{{ block.settings[content] }}</p> {%- endif -%}
+                  {%- if block.settings[image] -%}<div class="ratio media" style="--ratio-percent: {{ 1 | divided_by: block.settings[image].aspect_ratio | times: 100 }};">{{ block.settings[image] | image_url: width: 2048 | image_tag: width: block.settings[image].width, height: block.settings[image].height, sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', fetchpriority: 'low' }}</div>{%- endif -%}
+                  {%- if block.settings[richtext] -%} {{ block.settings[richtext] }} {%- endif -%}
+                  {%- if block.settings[page] -%}{{ block.settings[page].content }} {%- endif -%}
+                  {%- if block.settings[html] -%}{{ block.settings[html] }}{%- endif -%}
+                {% endif %}    
+              </div>
+            </div>
+           {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</product-tabs>
