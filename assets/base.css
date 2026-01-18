@@ -89,6 +89,11 @@ font-family: "Fontspring-DEMO";
 src: url("Fontspring-DEMO-rocgroteskcond-extrabold.woff2") format("woff2"),
 url("Fontspring-DEMO-rocgroteskcond-extrabold.woff") format("woff");
 }
+@font-face {
+font-family: "FONTSPRING DEMO - Roc Grotesk Medium";
+src: url("Fontspring-DEMO-rocgrotesk-medium.woff2") format("woff2"),
+url("Fontspring-DEMO-rocgrotesk-medium.woff") format("woff");
+}
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
 }
@@ -1216,6 +1221,7 @@ deferred-media {
 .button--tertiary {
   --color-button: var(--color-secondary-button);
   --color-button-text: var(--color-secondary-button-text);
+  font-family: var(--font-normal-fontspring);
 }
 
 .button--tertiary {
@@ -1238,6 +1244,7 @@ button.shopify-payment-button__button--unbranded {
   --border-opacity: calc(1 - var(--buttons-border-opacity));
   border-radius: var(--buttons-radius-outset);
   position: relative;
+  font-family: var(--font-normal-fontspring);
 }
 
 .button,
@@ -1246,6 +1253,7 @@ button.shopify-payment-button__button--unbranded {
 button.shopify-payment-button__button--unbranded {
   min-width: calc(12rem + var(--buttons-border-width) * 2);
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  font-family: var(--font-normal-fontspring);
 }
 
 .button,
@@ -1265,6 +1273,8 @@ button.shopify-payment-button__button--unbranded {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
+  font-family: var(--font-normal-fontspring);
+  font-size: clamp(16px, 2vw, 20px) !important;
 }
 
 .button:before,

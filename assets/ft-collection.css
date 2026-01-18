@@ -16,9 +16,8 @@
   font-size: 20px;
 }
 .collection .quick-add__submit {
-  font-family: var(--font-heading-fontspring);
+  font-family: var(--font-normal-fontspring);
   font-weight: 300;
-  font-size: 20px;
 }
 .collection .slider-counter {
   display: none;

@@ -1,7 +1,9 @@
 .rich-text {
   z-index: 1;
 }
-
+.rich-text__heading{
+  font-family: var(--font-heading-fontspring);
+}
 .rich-text__wrapper {
   display: flex;
   justify-content: center;

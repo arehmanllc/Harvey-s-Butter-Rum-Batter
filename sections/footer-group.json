@@ -67,7 +67,8 @@
       "type": "footer-bg-image",
       "name": "Background Image footer",
       "settings": {
-        "ft_image": "shopify://shop_images/harveys_logo_1_4.png"
+        "ft_image": "shopify://shop_images/harveys_logo_1_4.png",
+        "color_scheme": "scheme-293d23dc-42f0-4109-bb26-612438d863a0"
       }
     }
   },
