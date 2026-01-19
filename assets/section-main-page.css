@@ -4,6 +4,9 @@
 
 .main-page-title {
   margin-bottom: 3rem;
+  font-family: var(--font-heading-fontspring);
+  font-size: clamp(46px, 5vw, 72px);
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 750px) {

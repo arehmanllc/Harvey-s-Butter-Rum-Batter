@@ -1,0 +1,79 @@
+.collapse {
+  background: var(--gradient-background);
+  border-top: .1rem solid #A9A9A9;
+  border-bottom: .1rem solid #A9A9A9;
+}
+
+.collapse-button * {
+  pointer-events: none;
+}
+.collapse .collapsible-content__heading{
+  font-size: clamp(46px,5vw,72px);
+  text-transform: uppercase;
+  font-family: var(--font-heading-fontspring);
+}
+.collapse-button h2 {
+  margin: 0;
+  text-align: left;
+  color: rgb(var(--color-button));
+}
+
+.collapse-button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: var(--gradient-background);
+  color: rgb(var(--color-button));
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2rem 0rem 2rem 0;
+  font-family: inherit
+}
+
+
+.collapse-content * {
+  color: rgba(var(--color-foreground), 1);
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding-right: 2rem;
+  padding-left: 0rem;
+}
+
+
+.collapse-content p:only-child {
+  margin: 0;
+}
+
+.collapse-button svg {
+  transition: all 0.3s ease-in-out;
+  /* width: 6px;
+  height: 12px; */
+}
+
+.collapse-button.active svg {
+  transform: rotate(180deg);
+}
+button.collapse-button.active svg rect:last-child{opacity: 0;}
+.collapse-content.active {
+  padding-bottom: 2rem;
+}
+
+collapse-content+collapse-content .collapse {
+  border-top: none !important;
+}
+
+.collapse-content__grid-item {max-width: var(--max-width);}
+.collapse-content__grid-item strong{font-weight: 500;}
+.collapse-content__grid-item *:first-child{margin-top: 0rem;}
+.collapse-content__grid-item *:last-child{margin-bottom: 0rem;}
+.collapse-content__grid-item ul> li>p{display: inline;}
+@media screen and (min-width: 749px) { .collapse-content__grid { display: grid; grid-template-columns: calc(50% - 1.5rem) auto; gap: 1.5rem; }.collapsible-content.collapsible-section-layout.isolate.page-width{max-width: 106rem;}}
+.product__description .collapse-button svg,
+.product_dropdown .collapse-button svg{width: 18px;}
