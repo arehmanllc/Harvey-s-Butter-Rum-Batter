@@ -1,0 +1,77 @@
+{% case icon %}
+  {% when 'caret-down' %}
+    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  {% when 'prev' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+      <path d="M13.75 17.1448L8.25 11.6448L13.75 6.14484" stroke="currentColor" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  {% when 'star' %}
+    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.52611 0.914574C7.4291 0.712099 7.22453 0.583252 7 0.583252C6.77553 0.583252 6.5709 0.712099 6.47395 0.914574L4.93233 4.13273L1.38241 4.59886C1.15924 4.62816 0.972844 4.78325 0.903439 4.99736C0.83404 5.21148 0.894018 5.44643 1.05757 5.60107L3.65305 8.05534L3.00157 11.56C2.9605 11.7809 3.05 12.0058 3.23166 12.1381C3.41331 12.2704 3.65482 12.2866 3.8525 12.1797L7 10.478L10.1476 12.1797C10.3452 12.2866 10.5867 12.2704 10.7684 12.1381C10.95 12.0058 11.0395 11.7809 10.9985 11.56L10.347 8.05534L12.9425 5.60107C13.106 5.44643 13.166 5.21148 13.0966 4.99736C13.0272 4.78325 12.8408 4.62816 12.6176 4.59886L9.06768 4.13273L7.52611 0.914574Z" fill="currentColor" stroke="currentColor" stroke-width="0.583333"/>
+    </svg>
+  {% when 'next' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+      <path d="M8.25 17.1448L13.75 11.6448L8.25 6.14484" stroke="currentColor" stroke-width="1.46667" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  {%- when 'plus-circle' -%}
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M8.00016 14.6666C11.6821 14.6666 14.6668 11.6819 14.6668 7.99998C14.6668 4.31808 11.6821 1.33331 8.00016 1.33331C4.31826 1.33331 1.3335 4.31808 1.3335 7.99998C1.3335 11.6819 4.31826 14.6666 8.00016 14.6666Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8 5.33331V10.6666" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5.3335 8H10.6668" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  {%- when 'plus' -%}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="10"
+      height="10"
+      viewBox="0 0 10 10"
+      fill="none"
+      class="icon__svg-plus"
+    >
+      <rect y="4.41177" width="10" height="1.17647" fill="currentColor" />
+      <rect x="5.58789" width="10" height="1.17647" transform="rotate(90 5.58789 0)" fill="currentColor" />
+    </svg>
+  {%- when 'icon-minus' -%}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="10"
+      height="10"
+      viewBox="0 0 10 10"
+      fill="none"
+      class="icon__svg-minus"
+    >
+      <rect y="4.41177" width="10" height="1.17647" fill="currentColor" />
+    </svg>
+  {% when 'circle' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75 16C13.1683 16 16.75 12.4183 16.75 8C16.75 3.58172 13.1683 0 8.75 0C4.33172 0 0.75 3.58172 0.75 8C0.75 12.4183 4.33172 16 8.75 16Z" fill="currentColor"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75 12C10.9591 12 12.75 10.2091 12.75 8C12.75 5.79086 10.9591 4 8.75 4C6.54086 4 4.75 5.79086 4.75 8C4.75 10.2091 6.54086 12 8.75 12Z" fill="white"/>
+    </svg>
+  {% when 'dot' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+      <path d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" fill="currentColor"/>
+    </svg>
+  {% when 'warning' %}
+    <svg width="20" height="18" viewBox="0 0 200 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M197.825 153.394L113.896 8.02619C107.719 -2.67344 92.284 -2.67735 86.1043 8.02619L2.17519 153.394C-4.00217 164.094 3.71191 177.463 16.0713 177.463H183.929C196.284 177.464 204.004 164.098 197.825 153.394ZM107.352 139.136C107.352 143.196 104.061 146.488 100 146.488C95.9402 146.488 92.6484 143.196 92.6484 139.136V134.746C92.6484 130.685 95.9402 127.394 100 127.394C104.061 127.394 107.352 130.685 107.352 134.746V139.136ZM107.352 110.49C107.352 114.551 104.061 117.842 100 117.842C95.9402 117.842 92.6484 114.551 92.6484 110.49V68.3458C92.6484 64.2857 95.9402 60.9939 100 60.9939C104.061 60.9939 107.352 64.2857 107.352 68.3458V110.49Z" fill="#cb2b2b"/>
+    </svg>
+  {% when 'info' %}
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M11 16V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M11 7.5C11.2761 7.5 11.5 7.27614 11.5 7C11.5 6.72386 11.2761 6.5 11 6.5C10.7239 6.5 10.5 6.72386 10.5 7C10.5 7.27614 10.7239 7.5 11 7.5Z" fill="white" stroke="currentColor"/>
+    </svg>
+  {% when 'tick' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75 16C13.1683 16 16.75 12.4183 16.75 8C16.75 3.58172 13.1683 0 8.75 0C4.33172 0 0.75 3.58172 0.75 8C0.75 12.4183 4.33172 16 8.75 16Z" fill="currentColor"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6996 6.29301C14.0901 5.90248 14.0901 5.26932 13.6996 4.8788C13.3091 4.48827 12.6759 4.48827 12.2854 4.8788L7.33564 9.82854L5.21432 7.70722C4.82379 7.3167 4.19063 7.3167 3.8001 7.70722C3.40958 8.09775 3.40958 8.73091 3.8001 9.12144L6.62853 11.9499C7.01905 12.3404 7.65222 12.3404 8.04274 11.9499L13.6996 6.29301Z" fill="white"/>
+    </svg>
+  {% when 'star-rating' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none" class="icon icon-fill-star">
+      <path d="M8.00005 0.0600586L10.0785 5.19938L15.6086 5.58792L11.363 9.15274L12.7024 14.5322L8.00005 11.5961L3.29777 14.5322L4.63711 9.15274L0.391602 5.58792L5.92164 5.19938L8.00005 0.0600586Z" fill="#333333"/>
+    </svg>
+  {% else %}
+
+{% endcase %}

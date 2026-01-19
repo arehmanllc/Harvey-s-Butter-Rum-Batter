@@ -9,6 +9,37 @@
  */
 {
   "sections": {
+    "rich_text_gzMiCX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_irAEkN": {
+          "type": "heading",
+          "settings": {
+            "heading": "From the Popcorn Journal",
+            "heading_size": "hxl"
+          }
+        },
+        "text_KgihMA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Stories, recipes, and behind-the-scenes moments<br/>from the people who craft every batch of Harvey’s.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_irAEkN",
+        "text_KgihMA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -23,6 +54,7 @@
     }
   },
   "order": [
+    "rich_text_gzMiCX",
     "main"
   ]
 }

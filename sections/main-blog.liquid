@@ -1,7 +1,7 @@
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
-
+{{ 'blog.css' | asset_url | stylesheet_tag }}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -18,9 +18,9 @@
 
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    {% comment %} <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
-    </h1>
+    </h1> {% endcomment %}
 
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
@@ -38,7 +38,7 @@
             show_image: section.settings.show_image,
             show_date: section.settings.show_date,
             show_author: section.settings.show_author,
-            show_excerpt: true
+            show_excerpt: false
           -%}
         </div>
       {%- endfor -%}

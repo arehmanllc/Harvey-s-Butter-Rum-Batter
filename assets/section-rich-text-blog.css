@@ -1,0 +1,7 @@
+.rich-text__heading{
+  font-size: clamp(46px, 5vw, 72px);
+  text-transform: uppercase;
+}
+.rich-text__text{
+  font-weight: 500;
+}
