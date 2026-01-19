@@ -15,10 +15,20 @@
 {%- endstyle -%}
 
 <div class="page-width section-{{ section.id }}-padding">
-  <h1 class="center main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  {% comment %} <h1 class="center main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
-  </h1>
-  <div class="center rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  </h1> {% endcomment %}
+  <h1 class="center main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  {% assign words = page.title | split: ' ' %}
+  {% for word in words %}
+    {% assign word_downcase = word | downcase %}
+    <span class="word{% if word_downcase == 'canada' %} red{% endif %}">
+      {{ word }}
+    </span>
+  {% endfor %}
+</h1>
+
+  <div class="center rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} f-18 b-500">
     {{ page.content }}
   </div>
 </div>

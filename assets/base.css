@@ -2007,7 +2007,27 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
 }
-
+.red{
+  color:#DE0606;
+}
+.available-prd{
+  font-family: var(--font-heading-fontspring);
+  text-transform: uppercase;
+  font-size: 48px;
+  width: fit-content;
+  background-color: #E8AF3E;
+  padding: 14px 40px;
+  place-self: center;
+}
+.available-prd + table{
+  text-align: left;
+}
+.available-prd + table h3{
+  font-family: var(--font-heading-fontspring);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
 .quantity__button {
   width: calc(4.5rem / var(--font-body-scale));
   flex-shrink: 0;
@@ -3290,7 +3310,7 @@ details-disclosure > details {
 }
 
 .rte a:hover {
-  color: rgb(var(--color-link));
+  /* color: rgb(var(--color-link)); */
   text-decoration-thickness: 0.2rem;
 }
 
