@@ -11,13 +11,120 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collapsible_contents_RXVHhB": {
+      "type": "collapsible-contents",
+      "blocks": {
+        "collapsible_row_nb7atQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Besides making hot buttered rums, can I use the butter rum batter for other things?",
+            "icon": "check_mark",
+            "row_content": "<p>Absolutely. We have several recipes on our website that feature the butter rum batter-from drinks to desserts. Please take a look at them and also join us on our blog and FB page for additional ideas and to share your ideas.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MpqdTB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Harvey’s Butter Rum Batter have alcohol in it?",
+            "icon": "check_mark",
+            "row_content": "<p>Our batter does not contain actual alcohol in it. We use a delicious flavoring that gives it the rum taste.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7JraF3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Harvey’s have a retail store?",
+            "icon": "check_mark",
+            "row_content": "<p>Harvey’s just sells to our wholesale accounts out of our plant. We value our stores and retail accounts for carrying our products, just as they value you as customers. If there is not a retail store in your area, we do offer an online store for your convenience and can even assist you with your gift giving needs.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bKXjEW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Harvey’s offer tours of our plant?",
+            "icon": "check_mark",
+            "row_content": "<p>Due to food safety regulations, we are not able to offer tours or our production facility. We do wholesale production and are not set up to accommodate the public.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_89achr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is your product gluten free?",
+            "icon": "check_mark",
+            "row_content": "<p>Our butter rum batter and toffee corn are gluten free. Currently there are no items in our production facility that contain gluten, so no chance of any cross-contamination.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_VKVJVn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the shelf life of the Butter Rum Batter?",
+            "icon": "check_mark",
+            "row_content": "<p>Our batter has a 2 year shelf life under refrigeration and even longer if frozen. The toffee corn is best when eaten within 4 months of production.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hG6Hnt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where can I find my favorite Harvey’s items?",
+            "icon": "check_mark",
+            "row_content": "<p>The Harvey’s line of products can be found for sale in many grocery and specialty stores. If you would like your store to carry our products, please let them know.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Cba469": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where does the rabbit come from on your logo?",
+            "icon": "check_mark",
+            "row_content": "<p>Our beloved rabbit or should we say “polka”, named Harvey, comes from the Pulitzer Prize Play “Harvey”, which was made into a movie starring James Stewart in the 1950’s. Because “Harvey” is never seen in the movie our Founder, Harvey Hudson was able to bring the character to life and officially get a Trademark registration on him.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_nb7atQ",
+        "collapsible_row_MpqdTB",
+        "collapsible_row_7JraF3",
+        "collapsible_row_bKXjEW",
+        "collapsible_row_89achr",
+        "collapsible_row_VKVJVn",
+        "collapsible_row_hG6Hnt",
+        "collapsible_row_Cba469"
+      ],
+      "name": "New Collapsible Content",
+      "settings": {
+        "caption": "",
+        "heading": "Got Questions?",
+        "heading_size": "hxl",
+        "heading_alignment": "center",
+        "text": "We’ve Got Answers",
+        "button_label": "Button label",
+        "button_link": "",
+        "layout": "section",
+        "color_scheme": "scheme-5",
+        "container_color_scheme": "scheme-5",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collapsible_contents_RXVHhB"
   ]
 }
