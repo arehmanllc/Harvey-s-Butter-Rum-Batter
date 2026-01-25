@@ -22,6 +22,19 @@
               <div class="prod-tabs__content--inner">
                 {% if tab_handle contains 'description' and block.settings[content] == blank and block.settings[richtext] == blank %}
                   {{ product.description }}
+                {% elsif tab_handle contains 'ingredient' %} 
+                  {% assign ingrediants = shop.metaobjects.ingrediant_images.values %}
+                    {% for ingrediant in ingrediants %}
+                      {% if ingrediant.product.value.id == product.id %}
+                        {% if ingrediant.image.value %}
+                          {% comment %} <img 
+                            src="{{ ingrediant.image.value | image_url: width: 400 }}" 
+                            alt="{{ ingrediant.image.value.alt | escape }}"
+                          > {% endcomment %}
+                          <div class="ratio media" style="--ratio-percent: {{ 1 | divided_by: ingrediant.image.value.aspect_ratio | times: 100 }}%;">{{ ingrediant.image.value | image_url: width: 2048 | image_tag: width: ingrediant.image.value.width, height: ingrediant.image.value.height, sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', fetchpriority: 'low' }}</div>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}    
                 {% else %}
                   {%- if block.settings[content] -%}<p>{{ block.settings[content] }}</p> {%- endif -%}
                   {%- if block.settings[image] -%}<div class="ratio media" style="--ratio-percent: {{ 1 | divided_by: block.settings[image].aspect_ratio | times: 100 }};">{{ block.settings[image] | image_url: width: 2048 | image_tag: width: block.settings[image].width, height: block.settings[image].height, sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', fetchpriority: 'low' }}</div>{%- endif -%}

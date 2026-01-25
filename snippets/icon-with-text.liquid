@@ -106,7 +106,7 @@
       </span>
     </li>
   {%- endunless -%}
-  {%- unless heading_4_empty -%}
+  {% comment %} {%- unless heading_4_empty -%}
     <li class="icon-with-text__item">
       {%- if block.settings.image_4 == null -%}
         {% render 'icon-accordion', icon: block.settings.icon_4 -%}
@@ -127,5 +127,5 @@
         {{- block.settings.heading_4 -}}
       </span>
     </li>
-  {%- endunless -%}
+  {%- endunless -%} {% endcomment %}
 </ul>
