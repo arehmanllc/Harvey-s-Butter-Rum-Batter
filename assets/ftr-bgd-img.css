@@ -1,5 +1,16 @@
-
 .bg-container img{
   width: 100%;
   object-fit: contain;
+}
+.mob-img{
+  display: none;
+}
+
+@media screen and (max-width:989px){
+  .mob-img{
+    display: block;
+  }
+  .desktop-image img:first-child{
+  display: none;
+}
 }
