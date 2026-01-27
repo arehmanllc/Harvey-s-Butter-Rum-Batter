@@ -22,10 +22,10 @@
             "heading_size": "hxl",
             "subheading": "Made with real butter and carefully selected ingredients in every batch, bringing warm, nostalgic flavor and handcrafted quality you can truly taste.",
             "button_label_1": "Shop now",
-            "link_1": "#",
+            "link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "Our Story",
-            "link_2": "#",
+            "link_2": "shopify://pages/our-story",
             "button_style_secondary_2": false,
             "show_text_box": false,
             "box_align": "middle-left",
@@ -100,7 +100,7 @@
           "type": "button",
           "settings": {
             "button_label": "Explore Recipes",
-            "button_link": "#",
+            "button_link": "shopify://blogs/recipes",
             "button_style_secondary": true
           }
         }
@@ -194,10 +194,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop now",
-            "button_link_1": "#",
+            "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
             "button_label_2": "Explore Recipes",
-            "button_link_2": "#",
+            "button_link_2": "shopify://blogs/recipes",
             "button_style_secondary_2": true
           }
         }
@@ -257,7 +257,7 @@
         "text_size": 18,
         "text_color": "#2b2b2b",
         "button_text": "Our Story",
-        "button_link": "#",
+        "button_link": "shopify://pages/our-story",
         "button_background": "#e8af3e",
         "button_text_color": "#2b2b2b",
         "button_font_size": 16,
