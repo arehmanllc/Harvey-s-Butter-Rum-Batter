@@ -45,11 +45,18 @@
   transition: all 0.3s ease-in-out;
   overflow: hidden;
 }
-
+.ingredient-images{
+  display: none;
+}
 .prod-tabs__content>div {
   padding: 1rem 0rem;
 }
-
+.image-wrapper img{
+  width: 100%;
+}
+.prod-tabs__content .media{
+  margin-top: 1rem;
+}
 .prod-tabs__content {
   max-height: var(--max-height, 0px);
 }

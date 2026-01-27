@@ -23,7 +23,64 @@
                 {% if tab_handle contains 'description' and block.settings[content] == blank and block.settings[richtext] == blank %}
                   {{ product.description }}
                 {% elsif tab_handle contains 'ingredient' %} 
-                  {% assign ingrediants = shop.metaobjects.ingrediant_images.values %}
+                  {% comment %} {%- assign prd_title = product.title | handleize -%}
+                  
+                  {% if prd_title contains 'specialty-popcorn-5' %} {% endcomment %}
+                    {%- assign prd_cta_images = product.metafields.custom.product_cta_ingredient_images.value -%}
+                    {% if prd_cta_images != blank %}
+                      <div class="product-cta-images">
+                        {% if prd_cta_images.image != blank %}
+                            <div class="ingredient-images">
+                              <div class="image-grid">
+                                {% for image_item in prd_cta_images.image.value %}
+                                  <div class="image-wrapper">
+                                    <img 
+                                      src="{{ image_item | image_url: width: 800 }}" 
+                                      alt="Ingredient image {{ forloop.index }}"
+                                      loading="lazy"
+                                      width="800"
+                                      height="auto"
+                                    >
+                                  </div>
+                                {% endfor %}
+                              </div>
+                            </div>
+                        {% endif %}
+                        {% if prd_cta_images.nutrition_image != blank %}
+                          <div class="nutrition-images">
+                            <div class="image-grid">
+                              {% for image_item in prd_cta_images.nutrition_image.value %}
+                                <div class="image-wrapper">
+                                  <img 
+                                    src="{{ image_item | image_url: width: 800 }}" 
+                                    alt="Nutrition image {{ forloop.index }}"
+                                    loading="lazy"
+                                    width="800"
+                                    height="auto"
+                                  >
+                                </div>
+                              {% endfor %}
+                            </div>
+                          </div>
+                        {% endif %}
+                      </div>
+                    <script src="{{ 'prd-cta-images.js' | asset_url }}" defer="defer"></script>  
+                    {% else %}
+                      {% assign ingrediants = shop.metaobjects.ingrediant_images.values %}
+                      {% for ingrediant in ingrediants %}
+                        {% if ingrediant.product.value.id == product.id %}
+                          {% if ingrediant.image.value %}
+                            {% comment %} <img 
+                              src="{{ ingrediant.image.value | image_url: width: 400 }}" 
+                              alt="{{ ingrediant.image.value.alt | escape }}"
+                            > {% endcomment %}
+                            <div class="ratio media" style="--ratio-percent: {{ 1 | divided_by: ingrediant.image.value.aspect_ratio | times: 100 }}%;">{{ ingrediant.image.value | image_url: width: 2048 | image_tag: width: ingrediant.image.value.width, height: ingrediant.image.value.height, sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', fetchpriority: 'low' }}</div>
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}   
+                    {% endif %}  
+                  {% comment %} {% endif %}   {% endcomment %}
+                  {% comment %} {% assign ingrediants = shop.metaobjects.ingrediant_images.values %}
                     {% for ingrediant in ingrediants %}
                       {% if ingrediant.product.value.id == product.id %}
                         {% if ingrediant.image.value %}
@@ -34,7 +91,7 @@
                           <div class="ratio media" style="--ratio-percent: {{ 1 | divided_by: ingrediant.image.value.aspect_ratio | times: 100 }}%;">{{ ingrediant.image.value | image_url: width: 2048 | image_tag: width: ingrediant.image.value.width, height: ingrediant.image.value.height, sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', fetchpriority: 'low' }}</div>
                         {% endif %}
                       {% endif %}
-                    {% endfor %}    
+                    {% endfor %}     {% endcomment %}
                 {% else %}
                   {%- if block.settings[content] -%}<p>{{ block.settings[content] }}</p> {%- endif -%}
                   {%- if block.settings[image] -%}<div class="ratio media" style="--ratio-percent: {{ 1 | divided_by: block.settings[image].aspect_ratio | times: 100 }};">{{ block.settings[image] | image_url: width: 2048 | image_tag: width: block.settings[image].width, height: block.settings[image].height, sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', fetchpriority: 'low' }}</div>{%- endif -%}
