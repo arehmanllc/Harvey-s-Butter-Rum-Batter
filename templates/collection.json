@@ -182,7 +182,8 @@
       "type": "footer-bg-image",
       "name": "Background Image footer",
       "settings": {
-        "ft_image": "shopify://shop_images/Group_1643_1.png",
+        "ft_image": "shopify://shop_images/Group_1575_1_8732693c-1612-493b-921c-1d7040594437.png",
+        "ft_mobile_image": "shopify://shop_images/Group_1643_3_b152faae-5aca-42fe-9575-633d723db323.png",
         "color_scheme": ""
       }
     },
