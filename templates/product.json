@@ -274,7 +274,7 @@
             "star": "shopify://shop_images/Vector.png",
             "star_size": 5,
             "title": "",
-            "text": "<p>I've enjoyed <strong>Harvey's Butter Rum Batter</strong> since I was a kid. A local run business in Bremerton. I'm still finding new ways to enjoy it as an adult. Waffles, cocoa, ice cream, cinnamon rolls....the list goes on and on</p>",
+            "text": "<p>I've enjoyed <a href=\"https://www.facebook.com/harveysbutterrumbatter\" target=\"_blank\" title=\"https://www.facebook.com/harveysbutterrumbatter\"><strong>Harvey's Butter Rum Batter</strong> </a>since I was a kid. A local run business in Bremerton. I'm still finding new ways to enjoy it as an adult. Waffles, cocoa, ice cream, cinnamon rolls....the list goes on and on</p>",
             "author": "Mike V,  Port Orchard, WA",
             "link_label": "",
             "link": ""
