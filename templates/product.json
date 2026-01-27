@@ -33,7 +33,7 @@
             "layout": "horizontal",
             "icon_1": "heart",
             "image_1": "shopify://shop_images/Border.png",
-            "heading_1": "MADE WITH REAL BUTTER",
+            "heading_1": "{{ product.metafields.custom.product_ingredient_text.value }}",
             "icon_2": "return",
             "image_2": "shopify://shop_images/Border_1.png",
             "heading_2": "SMALL-BATCH CRAFTED",
@@ -221,10 +221,88 @@
         "column_x4b7zN",
         "column_Td9eNg"
       ],
+      "disabled": true,
       "name": "Testimonials",
       "settings": {
         "title": "<strong>What is everyone saying?</strong>",
         "heading_size": "hxl",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-ec11303e-61fc-4070-87e9-75a9c5d6c18a",
+        "enable_desktop_slider": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_PW7M6x": {
+      "type": "testimonials",
+      "blocks": {
+        "column_RD3xQg": {
+          "type": "column",
+          "settings": {
+            "star": "shopify://shop_images/Vector.png",
+            "star_size": 5,
+            "title": "",
+            "text": "<p>I've enjoyed <strong>Harvey's Butter Rum Batter</strong> since I was a kid. A local run business in Bremerton. I'm still finding new ways to enjoy it as an adult. Waffles, cocoa, ice cream, cinnamon rolls....the list goes on and on</p>",
+            "author": "Mike V,  Port Orchard, WA",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3LeXFT": {
+          "type": "column",
+          "settings": {
+            "star": "shopify://shop_images/Vector.png",
+            "star_size": 4,
+            "title": "",
+            "text": "<p>Cold weather is returning. Stay warm and cozy with a cup of Harvey's Butter Rum Batter. Their website has great recipes and other ways to use this local treasure. They will even ship some to family so if you have people on the East Coast - send them a treat to help keep them warm. We love adding it to hot chocolate or eggnog. Thanks <strong>Harvey's</strong> !!!!</p>",
+            "author": "Kathy P, Bremerton, WA",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_YadNni": {
+          "type": "column",
+          "settings": {
+            "star": "shopify://shop_images/Vector.png",
+            "star_size": 5,
+            "title": "",
+            "text": "<p>I've enjoyed <strong>Harvey's Butter Rum Batter</strong> since I was a kid. A local run business in Bremerton. I'm still finding new ways to enjoy it as an adult. Waffles, cocoa, ice cream, cinnamon rolls....the list goes on and on</p>",
+            "author": "Mike V,  Port Orchard, WA",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Q4aeek": {
+          "type": "column",
+          "settings": {
+            "star": "shopify://shop_images/Vector.png",
+            "star_size": 4,
+            "title": "",
+            "text": "<p>Cold weather is returning. Stay warm and cozy with a cup of Harvey's Butter Rum Batter. Their website has great recipes and other ways to use this local treasure. They will even ship some to family so if you have people on the East Coast - send them a treat to help keep them warm. We love adding it to hot chocolate or eggnog. Thanks <strong>Harvey's</strong> !!!!</p>",
+            "author": "Kathy P, Bremerton, WA",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RD3xQg",
+        "column_3LeXFT",
+        "column_YadNni",
+        "column_Q4aeek"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "",
@@ -261,7 +339,7 @@
           "type": "button",
           "settings": {
             "button_label": "Explore Recipes",
-            "button_link": "#",
+            "button_link": "shopify://blogs/recipes",
             "button_style_secondary": true
           }
         }
@@ -340,7 +418,7 @@
         "text_size": 18,
         "text_color": "#2b2b2b",
         "button_text": "Our Story",
-        "button_link": "#",
+        "button_link": "shopify://pages/our-story",
         "button_background": "#e8af3e",
         "button_text_color": "#2b2b2b",
         "button_font_size": 16,
@@ -467,6 +545,7 @@
     "main",
     "related-products",
     "testimonials_8JKnHG",
+    "testimonials_PW7M6x",
     "image_with_text_TEnHzT",
     "rich_text_hMD489",
     "footer_bg_image_93Tdnb",

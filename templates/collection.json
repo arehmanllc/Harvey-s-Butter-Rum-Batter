@@ -44,12 +44,11 @@
         "column_x7BWfP": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/avatar-7_80x80_crop_center.jpg_2x_ac629486-30f6-4bda-a220-239adcad5bf3.png",
             "star": "shopify://shop_images/Vector.png",
             "star_size": 5,
             "title": "",
-            "text": "<p>I’ve been enjoying Harvey’s Butter Rum Batter for years, and nothing else compares. The flavor is rich, smooth, and instantly nostalgic.</p>",
-            "author": "— Mark T., Washington",
+            "text": "<p>I've enjoyed <strong>Harvey's Butter Rum Batter</strong> since I was a kid. A local run business in Bremerton. I'm still finding new ways to enjoy it as an adult. Waffles, cocoa, ice cream, cinnamon rolls....the list goes on and on</p>",
+            "author": "Mike V,  Port Orchard, WA",
             "link_label": "",
             "link": ""
           }
@@ -57,64 +56,35 @@
         "column_JPwTJg": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/avatar-7_80x80_crop_center_jpg.png",
             "star": "shopify://shop_images/Vector.png",
             "star_size": 4,
             "title": "",
-            "text": "<p>The popcorn is incredible — crisp, buttery, and clearly made with care. Once you try it, you understand why people love this brand.</p>",
-            "author": "— Susan L., Oregon",
+            "text": "<p>Cold weather is returning. Stay warm and cozy with a cup of Harvey's Butter Rum Batter. Their website has great recipes and other ways to use this local treasure. They will even ship some to family so if you have people on the East Coast - send them a treat to help keep them warm. We love adding it to hot chocolate or eggnog. Thanks <strong>Harvey's</strong> !!!!</p>",
+            "author": "Kathy P, Bremerton, WA",
             "link_label": "",
             "link": ""
           }
         },
-        "column_hCqGCK": {
+        "column_EztJ69": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/avatar-7_80x80_crop_center_jpg.png",
-            "star": "shopify://shop_images/Vector.png",
-            "star_size": 4,
-            "title": "",
-            "text": "<p>The popcorn is incredible — crisp, buttery, and clearly made with care. Once you try it, you understand why people love this brand.</p>",
-            "author": "— Susan L., Oregon",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_NqceRc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/avatar-7_80x80_crop_center_jpg.png",
-            "star": "shopify://shop_images/Vector.png",
-            "star_size": 4,
-            "title": "",
-            "text": "<p>The popcorn is incredible — crisp, buttery, and clearly made with care. Once you try it, you understand why people love this brand.</p>",
-            "author": "— Susan L., Oregon",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_tqjP6w": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/avatar-7_80x80_crop_center.jpg_2x_ac629486-30f6-4bda-a220-239adcad5bf3.png",
             "star": "shopify://shop_images/Vector.png",
             "star_size": 5,
             "title": "",
-            "text": "<p>I’ve been enjoying Harvey’s Butter Rum Batter for years, and nothing else compares. The flavor is rich, smooth, and instantly nostalgic.</p>",
-            "author": "— Mark T., Washington",
+            "text": "<p>I've enjoyed <strong>Harvey's Butter Rum Batter</strong> since I was a kid. A local run business in Bremerton. I'm still finding new ways to enjoy it as an adult. Waffles, cocoa, ice cream, cinnamon rolls....the list goes on and on</p>",
+            "author": "Mike V,  Port Orchard, WA",
             "link_label": "",
             "link": ""
           }
         },
-        "column_cRkBaf": {
+        "column_4F7zTP": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/avatar-7_80x80_crop_center.jpg_2x_ac629486-30f6-4bda-a220-239adcad5bf3.png",
             "star": "shopify://shop_images/Vector.png",
-            "star_size": 5,
+            "star_size": 4,
             "title": "",
-            "text": "<p>I’ve been enjoying Harvey’s Butter Rum Batter for years, and nothing else compares. The flavor is rich, smooth, and instantly nostalgic.</p>",
-            "author": "— Mark T., Washington",
+            "text": "<p>Cold weather is returning. Stay warm and cozy with a cup of Harvey's Butter Rum Batter. Their website has great recipes and other ways to use this local treasure. They will even ship some to family so if you have people on the East Coast - send them a treat to help keep them warm. We love adding it to hot chocolate or eggnog. Thanks <strong>Harvey's</strong> !!!!</p>",
+            "author": "Kathy P, Bremerton, WA",
             "link_label": "",
             "link": ""
           }
@@ -123,10 +93,8 @@
       "block_order": [
         "column_x7BWfP",
         "column_JPwTJg",
-        "column_hCqGCK",
-        "column_NqceRc",
-        "column_tqjP6w",
-        "column_cRkBaf"
+        "column_EztJ69",
+        "column_4F7zTP"
       ],
       "name": "Testimonials",
       "settings": {
